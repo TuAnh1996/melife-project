@@ -51,7 +51,7 @@
             <asp:Panel ID="pHeader" runat="server" BackColor="#94D315" 
                     Font-Bold="True" ForeColor="White" 
                     Width="300px" Height="20px" BorderWidth="0px" CssClass="dragMe">
-            <div class="title">-報告資料の作成</div><div class="close">
+            <div class="title">ミライフ修正コード</div><div class="close">
                 <input type="image" src="./img/close.png" onclick="hiddenDetailsView(); return false;" /></div>
             </asp:Panel>
             </td></tr>
