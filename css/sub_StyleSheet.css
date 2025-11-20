@@ -1,0 +1,620 @@
+﻿body 
+{
+    margin:0px;
+    padding:0 20px 0 20px;
+    background-color:#F5F5F5;
+    font-size:12px;
+}
+
+table#search
+{
+    margin-left:auto;
+    border-collapse:collapse;
+}
+
+table#search tr td
+{
+    padding:0 10px;
+    border-right:1px solid #999999;
+    border-left:1px solid #999999;
+}
+
+table#search tr td.end
+{
+    border-right:none;
+}
+
+/*margin、paddingを0に設定する*/
+.margin_zero
+{
+    margin:0px;
+    padding:0px;
+}
+
+div#header
+{
+    width:100%;
+    height:40px;
+    margin-bottom:20px;
+    background-color:#FFFFFF;
+    background-color:Gray;
+    font-size:30px;
+    font-weight:bold;
+    line-height:40px;
+    color:#FFFFFF;
+}
+
+div#header #id
+{
+    float:left;
+    margin-bottom:20px;
+}
+
+div#header #id img
+{
+    margin-left:52px;
+    margin-top:5px;
+}
+
+div#header #menu
+{
+    float:right;
+    width:900px;
+}
+
+div#header #menu ul
+{
+    margin:0;
+    padding:0;
+}
+
+div#header #menu ul li
+{
+    padding-top:5px;
+    float:left;
+    margin:0px;
+    width:140px;
+    height:35px;
+    border-left:1px solid #000000;
+    list-style:none;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+}
+
+div#header #menu ul a
+{
+    color:#0066CC;
+    cursor:pointer;
+}
+
+div#header #menu ul a:hover li
+{
+    background-color:#FAD163;
+}
+
+div#header #menu ul a li img
+{
+    border:none;
+}
+
+div#header #menu ul li p{
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0;
+}
+
+div#header #menu ul li p img
+{
+    margin:0 7px;
+}
+
+/*for IE6 */
+* html div#header #menu ul li p{
+	display: inline;
+	zoom: 1;
+}
+
+/*for IE7 */
+*:first-child+html div#header #menu ul li p{
+	display: inline;
+	zoom: 1;
+}
+
+div#header #menu ul li#end
+{
+    border-right:1px solid #000000;
+}
+
+div#container
+{
+    width:100%;
+    background-color:#FFFFFF;
+}
+
+#container #sub
+{
+    width:17%;
+    float:left;
+}
+
+#container #right #calender
+{
+    border-bottom:2px solid #999999;
+    border-right:2px solid #999999;
+    margin-bottom:10px;
+}
+
+#container #right #calender h1
+{
+    background-image:url(../img/calender_h1_bk.png);
+    background-repeat:repeat-x;
+    background-color:#A63C41;
+    margin:0;
+    padding:0;
+    color:#FFFFFF;
+    text-align:center;
+    line-height:22px;
+    font-size:18px;
+    border:1px solid #000000;
+    border-bottom:none;
+    height:22px;
+}
+
+#container #sub h2
+{
+    padding:0;
+    margin:0;
+    font-size:14px;
+    font-weight:bold;
+    height:16px;
+    color:#000000;
+}
+
+#container #right #calender p
+{
+    text-align:center;
+    font-size:48px;
+    line-height:84px;
+    height:84px;
+    display:block;
+    border:1px solid #000000;
+    margin:0;
+}
+
+#container #sub #memo_pad
+{
+    border-top:1px solid #999999;
+    border-left:1px solid #999999;
+    border-bottom:2px solid #666666;
+    border-right:2px solid #666666;
+    height:294px;
+    margin-bottom:3px;
+    overflow-y:scroll;
+}
+
+#container #sub #memo_pad ul
+{
+    margin:0;
+    padding:0;
+}
+
+#container #sub #memo_pad ul li
+{
+    padding:5px;
+    list-style:none;
+    cursor:pointer;
+}
+
+#container #sub #memo_pad ul li:hover
+{
+    border:1px solid #FAD163;
+}
+
+#container #right
+{
+    width:17%;
+    float:left;
+    margin-top:1%;
+    background-color:Gray;
+     font-size:30px;
+    font-weight:bold;
+    line-height:40px;
+    color:#FFFFFF;
+}
+
+#container #sub #student_info
+{
+    min-height:254px;
+    border:solid 1px #000000;
+    margin-bottom:10px;
+    padding-bottom:5px;
+}
+
+#container #sub #student_info h1
+{
+    text-align:left;
+    background-image:url(../img/student_image.png);
+    background-position:left center;
+    background-repeat:no-repeat;
+    padding-left:15px;
+    margin:0 0 5px 0;
+    padding:3px 3px 3px 20px;
+    background-color:#F2FFD6;
+    font-size:16px;
+    font-weight:bold;
+}
+
+#container #sub #student_info p
+{
+    padding:0 5px;
+    margin:0;
+    line-height:16px;
+    font-size:14px;
+}
+
+#container #sub #student_info .line
+{
+    margin:5px 0;
+    width:100%;
+    height:1px;
+}
+
+#container #sub #search_box
+{
+    padding:0;
+    border-right:2px solid #999999;
+    border-bottom:2px solid #999999;
+    margin-bottom:10px;
+}
+
+#container #sub #search_box table .title
+{
+    height:14px;
+    background-color:#CCCCCC;
+    border-bottom:1px solid #000000;
+}
+
+#container #sub #search_box table .title td
+{
+    font-size:12px;
+    font-weight:bold;
+    padding:3px;
+}
+
+#container #sub #search_box table .body
+{
+    text-align:right;
+    font-weight:normal;
+    margin:0;
+    border-bottom:1px solid #000000;
+}
+
+#container #sub #search_box table .body td
+{
+    padding:3px;
+}
+
+#container #sub #search_box table
+{
+    margin:0px;
+    min-height:60px;
+    border:1px solid #000000;
+    border-collapse:collapse;
+}
+
+#container #right #tool_box
+{
+    height:529px;
+    border:1px solid #000000;
+    background-image:url("../img/toolbox_back.png");
+    background-repeat:repeat-x;
+    background-color:#94D315;
+}
+
+#container #right #tool_box ul
+{
+    margin:0;
+    padding:0;
+}
+
+#container #right #tool_box ul li
+{
+    margin:0;
+    border-bottom:solid 1px #F4FDE1;
+    list-style:none;
+}
+
+#container #right #tool_box ul li a
+{
+    padding:3px 0 3px 10px;
+    display:block;
+    border-bottom:solid 1px #567A0C;
+    color:#000000;
+    text-decoration:underline none;
+}
+
+#container #right #tool_box ul li a:hover
+{
+    background-color:Green;
+    color:#FFFFFF;
+}
+
+#container #right #tool_box h2
+{
+    margin:0px;
+    padding:0px;
+    background-image:url('../img/li_h1_back.png');
+    background-repeat:repeat-y;
+    border-bottom:solid 1px #F4FDE1;
+    height: 30px;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: 0px;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: 0px;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: 0px;
+}
+
+#container #right #tool_box h2 a
+{
+    border-bottom:solid 1px #567A0C;
+    display:block;
+    height:29px;
+    line-height:30px;
+    padding-left:24px;
+    cursor:default;
+    color:Black;
+    text-decoration:underline none;
+    
+}
+
+#container #right #in_footer
+{
+    height:52px;
+    background-color:#000000;
+    color:#FFFFFF;
+    text-align:center;
+}
+
+#container #left
+{
+    float:left;
+    width:80%;
+    margin:1%;
+}
+
+#container #left h1
+{
+    width:99%;
+    border-top:3px solid #94D310;
+    height:24px;
+    line-height:34px;
+    font-size:16px;
+    padding-left:1%;
+    color:#333333;
+    background-image:url("../img/h1_bk_sub.jpg");
+    background-position:bottom;
+    background-repeat:repeat-x;
+    margin-bottom:10px;
+    margin-top:0px;
+}
+
+#container #left table.add_payment
+{
+    width:100%;
+    border-collapse:collapse;
+}
+
+#container #left table.add_payment tr td
+{
+    border:1px solid #999999;
+    padding:5px;
+    height:25px;
+}
+
+#container #left table.add_payment tr td.l
+{
+    text-align:center;
+    width:30%;
+    background-image:url("../img/td_bk_sub.jpg");
+}
+
+#container #left table.add_payment tr td.r
+{
+    width:70%;
+}
+
+#container #left table.add_payment tr td.l_h
+{
+    width:20%;
+    background-image:url("../img/td_bk_sub.jpg");
+    text-align:center;
+}
+
+#container #left table.add_payment tr td.h_h
+{
+    padding:2px;
+    width:3%;
+    background-color:Pink;
+}
+
+#container #left table.add_payment tr td.h_h_h
+{
+    background-color:#FFECEF;
+}
+
+#container #left table.add_payment tr td.r_h
+{
+    width:30%;
+}
+
+#container #left table.add_payment tr td.l_h_h
+{
+    width:17%;
+    background-image:url("../img/td_bk_sub.jpg");
+    text-align:center;
+}
+
+#container #left .button_area
+{
+    margin-top:10px;
+    text-align:right;
+}
+
+table.confirm_window
+{
+    border-collapse:collapse;
+}
+
+table.confirm_window tr td
+{
+    border:solid 1px #000000;
+    padding:0px;
+}
+
+table.confirm_window p
+{
+    display:block;
+    width:40px;
+    margin:0;
+    padding:0;
+    height:20px;
+    font-weight:normal;
+    background-color:Black;
+}
+
+table.confirm_window tr td.body
+{
+    padding:5px;
+    background-color:#FFFFFF;
+}
+
+table.confirm_window div.title
+{
+    padding-left:3px;
+    float:left;
+    line-height:20px;
+    width:280px;
+}
+
+table.confirm_window div.close
+{
+    padding-top:4px;
+    text-align:right;
+    padding-right:4px;
+    cursor:pointer;
+}
+
+#container #footer
+{
+    clear:left;
+}
+.dragMe 
+{
+	cursor:move;
+}
+
+table.sim
+{
+    border-collapse:collapse;
+}
+
+table.sim .head
+{
+    background-color:gray;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+table.sim tr td
+{
+    text-align:center;
+    border:1px solid #CCCCCC;
+    padding:3px;
+}
+
+table.sim tr.c
+{
+    background-color:#F7F7DE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container #left table.reservation
+{
+    border-collapse:collapse;
+    width:100%;
+}
+
+#container #left table.reservation tr td
+{
+    border:1px solid #000000;
+    padding:0;
+}
+
+#container #left table.reservation tr
+{
+    height:21px;
+}
+
+#container #left table.reservation tr td .y_button
+{
+    width:100%;
+    height:21px;
+    background-color:Aqua;
+}
+
+#container #left table.reservation .b
+{
+    background-image:url(../img/naname-blue.gif);
+    color:#FFFFFF;
+}
+
+#container #left table.reservation .r
+{
+    background-image:url(../img/naname-red.gif);
+    color:#FFFFFF;
+}
+
+#container #left table.reservation tr td.date
+{
+    font-weight:bold;
+    font-size:14px;
+}
+
+#container #left table.reservation .g
+{
+    background-image:url(../img/naname-gray.gif);
+}
+
+#container #left table.reservation tr.header
+{
+    background-image:url("../img/table_head.jpg");
+    background-position:bottom;
+    color:#FFFFFF;
+    font-weight:bold;
+    font-size:14px;
+}
+
+#container #left table.reservation tr td
+{
+    text-align:center;
+}

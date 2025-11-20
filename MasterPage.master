@@ -1,0 +1,198 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="./css/master_css.css" rel="stylesheet" type="text/css" />
+    <script src="js/heightLine.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/master.css" type="text/css" media="screen"/>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </ajaxToolkit:ToolkitScriptManager>
+    <div style="background-color:#D04528;" id="header">
+        <div style="float:right;">
+			<ul id="ldd_menu">
+				<li>
+					<span><table style="border-collapse:collapse;"><tr><td><img src="img/money_icon.png" /></td><td>教室管理</td></tr></table></span><!-- Increases to 510px in width-->
+					<div class="ldd_menu">
+						<ul>
+							<li class="ldd_heading">受講生関連</li>
+							<li><a href="#">受講生リスト</a></li>
+							<li><a href="#">フォローリスト</a></li>
+                            <li><a href="#">受講生情報修正</a></li>
+						</ul>
+						<ul>
+							<li class="ldd_heading">座席管理</li>
+							<li><a href="#">説明会用座席確保画面</a></li>
+							<li><a href="#">入学予定者用座席確保画面</a></li>
+						</ul>
+						
+						<a class="ldd_subfoot" href="#"> + ここに説明が入ります</a>
+					</div>
+				</li>
+				<li>
+					<span><table style="border-collapse:collapse;"><tr><td><img src="img/graph_icon.png" /></td><td>売上管理</td></tr></table></span>
+					<div class="ldd_submenu">
+						<ul>
+							<li class="ldd_heading">入金管理</li>
+							<li><a href="#">入金登録</a></li>
+							<li><a href="#">入金履歴</a></li>
+						</ul>
+						<ul>
+							<li class="ldd_heading">報告書関連</li>
+							<li><a href="#">報告資料のダウンロード</a></li>
+						</ul>
+						
+						<a class="ldd_subfoot" href="#"> + ここに説明が入ります</a>
+					</div>
+				</li>
+				<li>
+					<span><table style="border-collapse:collapse;"><tr><td><img src="./img/control_icon.png" /></td><td>教室設定</td></tr></table></span>
+					<div class="ldd_submenu">
+						<ul>
+							<li class="ldd_heading">教室設定</li>
+							<li><a href="#">基本設定</a></li>
+							<li><a href="#">担当者一覧</a></li>
+                            <li><a href="#">担当者登録</a></li>
+						</ul>
+						<ul>
+							<li class="ldd_heading">時間割管理</li>
+							<li><a href="#">タイムテーブルエディタ</a></li>
+							<li><a href="#">祝日一覧</a></li>
+                            <li><a href="#">祝日登録</a></li>
+						</ul>
+						
+						<a class="ldd_subfoot" href="#"> + ここに説明が入ります</a>
+					</div>
+				</li>
+                <li>
+					<span><table style="border-collapse:collapse;"><tr><td><img src="img/text_icon.png" /></td><td>教材管理</td></tr></table></span>
+					<div class="ldd_submenu">
+						<ul>
+							<li class="ldd_heading">追加発注関連</li>
+							<li><a href="#">出庫登録</a></li>
+							<li><a href="#">入庫登録</a></li>
+						</ul>
+						<ul>
+							<li class="ldd_heading">月初発注</li>
+							<li><a href="#">教材作成依頼(月末発注分)</a></li>
+							<li><a href="#">納品登録</a></li>
+						</ul>
+						<ul>
+							<li class="ldd_heading">履歴照会</li>
+							<li><a href="#">入出庫履歴</a></li>
+							<li><a href="#">月初発注履歴</a></li>
+						</ul>
+						<a class="ldd_subfoot" href="#"> + ここに説明が入ります</a>
+					</div>
+				</li>
+                <li>
+					<span><table style="border-collapse:collapse;"><tr><td><img src="img/text_icon.png" /></td><td>管理者用</td></tr></table></span>
+					<div class="ldd_submenu">
+						<ul>
+							<li class="ldd_heading">教室管理</li>
+                            <li><a href="#">教室管理画面</a></li>
+                            <li><a href="#">教室新規登録</a></li>
+							<li><a href="#">ユーザの管理</a></li>
+							<li><a href="#">ユーザの追加</a></li>
+                            <li><a href="#">アクセスログのダウンロード</a></li>
+						</ul>
+						<ul>
+							<li class="ldd_heading">テキスト関連</li>
+							<li><a href="#">教室別月初発注一覧</a></li>
+							<li><a href="#">教室別テキスト在庫一覧</a></li>
+                            <li><a href="#">テキスト情報一覧</a></li>
+                            <li><a href="#">テキスト情報修正</a></li>
+						</ul>
+						<ul>
+							<li class="ldd_heading">講座管理</li>
+							<li><a href="#">講座の管理</a></li>
+                            <li><a href="#">講座の追加</a></li>
+						</ul>
+						<a class="ldd_subfoot" href="#"> + この画面は、管理アカウントでアクセスした場合のみ表示されます</a>
+					</div>
+				</li>
+			</ul>
+            </div>
+    </div>
+    <div id="container">
+    <div id="left" class="heightLine">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="right" class="heightLine">
+    <div id="tool_box">
+    <h2><a href="#">受信関連</a></h2>
+    <ul>
+        <li><a href="#">受信登録</a></li>
+        <li><a href="#">受信履歴</a></li>
+    </ul>
+    <h2><a href="#">説明会関連</a></h2>
+    <ul>
+        <li><a href="#">説明会予約状況一覧</a></li>
+        <li><a href="#">説明会予約表</a></li>
+    </ul>
+    <h2><a href="#">受講生管理</a></h2>
+    <ul>
+    <li><a href="#">受講生新規登録</a></li>
+    <li><a href="#">受講生情報の照会</a></li>
+    <li><a href="#">休学・退校・減耗登録</a></li>
+    </ul>
+    <h2><a href="#">予約管理</a></h2>
+    <ul>
+    <li><a href="#">予約状況照会(人数ベース)</a></li>
+    <li><a href="#">予約状況照会(○×ベース)</a></li>
+    <li><a href="#">教室予約一覧表</a></li>
+    <li><a href="#">追加予約一覧表</a></li>
+    <li><a href="#">入金チェック表</a></li>
+    </ul>
+    </div>
+    <div id="in_footer">
+        <br />
+        <br />
+    - CCIPC SCHOOL -
+    </div>
+    </div>
+    <div style="clear:both"></div>
+    </div>
+    </form>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                /**
+                * the menu
+                */
+                var $menu = $('#ldd_menu');
+
+                /**
+                * for each list element,
+                * we show the submenu when hovering and
+                * expand the span element (title) to 510px
+                */
+                $menu.children('li').each(function () {
+                    var $this = $(this);
+                    var $span = $this.children('span');
+                    $span.data('width', $span.width());
+                    $this.bind('mousedown', function () {
+                        $menu.find('.ldd_submenu').stop(true, true).hide();
+                        $span.stop().animate({}, 300, function () {
+                            $this.find('.ldd_submenu').slideDown(300);
+                        });
+                    }).bind('mouseleave', function () {
+                        $this.find('.ldd_submenu').stop(true, true).hide();
+                        $span.stop().animate({ 'width': $span.data('width') + 'px' }, 0);
+                    });
+                });
+            });
+        </script>
+</body>
+</html>
